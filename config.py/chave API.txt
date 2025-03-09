@@ -1,0 +1,4 @@
+
+API_KEY = "sua_api_key"
+API_SECRET = "seu_api_secret"
+BASE_URL = "https://api.exchange.com"

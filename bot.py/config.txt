@@ -1,0 +1,11 @@
+import config
+from strategies import MovingAverageStrategy
+from crypto_trading_bot import CryptoTradingBot
+
+def main():
+    strategy = MovingAverageStrategy()
+    bot = CryptoTradingBot(config.API_KEY, config.API_SECRET, strategy)
+    bot.start()
+
+if __name__ == "__main__":
+    main()

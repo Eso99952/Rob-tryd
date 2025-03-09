@@ -1,0 +1,20 @@
+
+import requests
+
+class CryptoTradingBot:
+    def __init__(self, api_key, api_secret, strategy):
+        self.api_key = api_key
+        self.api_secret = api_secret
+        self.strategy = strategy
+
+    def start(self):
+        while True:
+            # Lógica principal do robô de trading
+            signals = self.strategy.generate_signals()
+            for signal in signals:
+                self.execute_trade(signal)
+
+    def execute_trade(self, signal):
+        # Implementar a lógica de execução de trades
+        pass
+
